@@ -1,0 +1,206 @@
+/*
+Template Name: Mark Age
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+/*********************about****************/
+#team_h{
+padding-top:40px;
+padding-bottom:40px;
+background:#f47a1417; 
+ }
+.team_h1i3 span{
+display:inline-block;
+text-align:center;
+width:60px;
+height:60px;
+line-height:60px;
+color:#fff;
+background:#14c3bf;
+font-size:20px; 
+ }
+.team_h1i2 ul li a{
+background: #f47a14;
+border-radius:0;
+ }
+.team_h1i2 ul li{
+display:block;
+margin-bottom:1px;
+ }
+.team_h1i{
+position:relative; 
+ }
+.team_h1i2{
+position:absolute;
+bottom:60px;
+display:none; 
+ }
+.team_h1i:hover .team_h1i2{
+display:block;
+ }
+.team_h1i3{
+position:absolute;
+bottom:0; 
+ }
+.team_h1ib{
+padding:20px;
+background: #fff;
+border-left:5px solid #f47a14;
+ }
+.team_h1ib:hover{
+background:#333;
+ }
+.team_h1ib:hover h4 a{
+color:#fff;
+ }
+
+#proj_h{
+background:#f47a1417;
+padding-top:50px;
+padding-bottom:50px; 
+}
+.proj_h1i {
+background: #fff;
+padding: 20px 10px;
+box-shadow: 0 0 10px #2db1ae30;
+border-radius: 3px;
+}
+.proj_h1i span i{
+font-size:60px;
+color:#2db1ae; 
+}
+
+#course_home{
+padding-top:40px;
+padding-bottom:40px; 
+}
+.course_home_l h3{
+background:#2db1ae;
+padding:10px 10px 12px 10px; 
+text-align:center;
+color:#fff; 
+}
+.course_home_li span{
+color:#fff;
+width:50px;
+height:50px;
+background:#2db1ae; 
+text-align:center;
+line-height:50px;
+font-size:26px;
+border-radius:50%;
+margin-right:5px;
+vertical-align:middle;
+}
+.course_home_li{
+margin-top:30px;
+}
+.course_home_lii{
+border-bottom:2px dotted #2db1ae30;
+padding-bottom:30px;  
+}
+
+#architect{
+padding-top:40px;
+padding-bottom:180px; 
+}
+
+.archi_ili img{
+width:80%;
+}
+.archi_il{
+position:relative; 
+}
+.archi_ili1 h4 span{
+color:#f47a14;
+}
+.archi_ili1 p i{
+margin-right:5px;  
+}
+.archi_ili1{
+background:#524a4a;
+width:60%; 
+padding:20px 15px; 
+position:absolute;
+bottom:-15%;
+right:0;
+}
+.archi_ir ul li i{
+vertical-align:middle;
+color:#f47a14;
+font-size:14px;
+margin-right:5px;
+}
+.archi_ir ul li{
+font-size:20px;
+margin-top:10px;  
+}
+/*********************about_end****************/
+
+@media screen and (max-width : 767px){
+.team_h1i1  img{
+min-height:320px; 
+ }
+.team_h1ib{
+margin-bottom:10px; 
+ }
+.proj_h1i{
+margin-top:10px; 
+}
+.course_home_lii .col-sm-2{
+float:left; 
+}
+.course_home_lii{
+padding-bottom:10px;
+margin-bottom:10px; 
+}
+.course_home_li{
+margin-top:15px; 
+}
+.course_home_l p{
+text-align:center;
+} 
+.course_home_l{
+margin-top:10px; 
+}
+
+.archi_ili img{
+width:100%;
+margin-bottom:20px; 
+}
+.archi_ili1{
+width:100%;
+text-align:center;
+position:static; 
+margin-bottom:20px;
+}
+.archi_ir {
+text-align:center; 
+}
+#architect{
+padding-bottom:40px;  
+}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.team_h1i1  img{
+min-height:320px; 
+ }
+.course_home_li span{
+width:35px;
+height:35px;
+line-height:35px;
+font-size:18px; 
+} 
+.archi_ili img{
+min-height:600px; 
+}
+ }
+@media (min-width:992px) and (max-width:1200px) {
+
+  }
+@media (min-width:1201px) and (max-width:1360px) {
+
+ }

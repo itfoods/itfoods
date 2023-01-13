@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRM | Under Construction</title><link rel="icon" type="image/x-icon" href="img/irm.jpg">
+    <link href="css/global.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #d0c9b4;
+            font-family: tahoma;
+            font-size: 12px;
+            color: white;
+            min-width: 599px;
+            background: transparent url(img/bg.jpg) 0 0 no-repeat;
+            background-size: cover;
+        }
+        #main{
+            width: 100%;
+            position: relative;
+            z-index: 100;
+        }
+        .wrap{
+            width: 599px;
+            margin: auto;
+        }
+        #header{
+            padding: 70px;
+        }
+        #header h1{
+            font-family: tahoma;
+            text-align: center;
+            font-size: 18px;
+            position: relative;
+            width: 280px;
+            margin: auto;
+        }
+        #header h1::before{
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            top: 50%;
+            left: -12%;
+        }
+        #header h1::after{
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            top: 50%;
+            right: -12%;
+        }
+        #contents{
+            font-family: tahoma;
+            text-align: center;
+            color: black;
+            padding-bottom: 35px;
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: normal;
+            margin: -50px;
+        }
+        #contents h2{
+            font-family: tahoma;
+            font-size: 80px;
+            line-height: 80px;
+            font-weight: 500;
+        }
+        #contents .loader{
+            padding: 20px 0;
+        }
+        #contents .loader .load{
+            background-color: #313031;
+        }
+        #contents .loader .load .percentage{
+            background-color: white;
+            height: 10px;
+        }
+        #contents .loader .info{
+            display: flex;
+            font-size: 18px;
+        }
+
+        #contents .loader .info span{
+            flex: 1;
+        }
+        #contents .loader .info span:first-child{
+            text-align: left;
+        }
+        #contents .loader .info span:last-child{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="preloader">
+
+    </div>
+   <button><a class="" href="index.html">Home</a></button> 
+    <div id="main">
+        <header id="header">
+            <img src="img/irm.png" width="20%" height="20%" style="align-self: center;" alt="">
+            <div class="wrap">
+                <h1 style="color: black;">INTERNATIONAL RICE MILL</h1>
+            </div>
+        </header>
+        <section id="contents">
+            <div class="wrap">
+                <h2 style="color: black;">UNDER <br> CONSTRUCTION</h2>
+                <div class="loader">
+                    <div class="load">
+                        <div id="count" class="percentage" style="width: 0%;">
+                        </div>
+                    </div>
+                    <div class="info" style="color: black;">
+                        <span>0%</span>
+                        <span id="progress">0%</span>
+                        <span> 100%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br><br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d110629.69719064633!2d73.17697856677766!3d29.945557183205427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d29.950465599999998!2d73.2463298!4m5!1s0x393d71057688c1c1%3A0x41afa2df659ac538!2sHaroonabad-Bahawalnagar%20Rd%2C%20near%20Punjab%20Rice%20Mills%2C%20Bah%C4%81walnagar%2C%20Bahawalnagar%2C%20Punjab%2062300!3m2!1d29.9455757!2d73.24701879999999!5e0!3m2!1sen!2s!4v1673610645607!5m2!1sen!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <script>
+        var elem = document.getElementById("count");
+        var width = 0;
+        var id = setInterval(frame, 50);
+        function frame(){
+            if (width <95) {
+                width++;
+                elem.style.width = width + '%';
+                document.getElementById("progress").innerHTML = width * 1 + '%';  
+            }
+
+        }
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
+    </script>
+</body>
+</html>
