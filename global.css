@@ -2,7 +2,7 @@
 body{
 	
 font-family: 'Noto Serif', serif;
-background-image:  linear-gradient(to right, #152238, #b7803f);
+background-image:  linear-gradient(right, #000428, #b7803f);
 }
 h1,h2,h3,h4,h5,h6{
 padding:0;
